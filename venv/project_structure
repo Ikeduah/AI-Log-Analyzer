@@ -1,0 +1,29 @@
+ai_log_analyzer/
+│
+├── app/
+│   ├── __init__.py
+│   ├── routes.py
+│   ├── models.py
+│   ├── utils/
+│   │   ├── log_parser.py
+│   │   ├── anomaly_detector.py
+│   │   └── notifier.py
+│   └── templates/
+│       └── dashboard.html
+│
+├── migrations/
+├── instance/
+│   └── config.py
+├── tests/
+│   └── test_upload.py
+├── requirements.txt
+├── run.py
+└── README.md
+
+
+Suggested sprints:
+feature/log-upload → Upload API + parsing
+feature/anomaly-detection → Isolation Forest
+feature/database-storage → Save logs/anomalies
+feature/dashboard → Minimal dashboard
+feature/notifications → Slack/email alerts
